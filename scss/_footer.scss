@@ -1,0 +1,48 @@
+.footer {
+  padding: 50px 75px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 60px;
+
+  &__list-title {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 22px;
+    color: #fb3b2d;
+  }
+
+  &__list {
+    list-style-type: none;
+    margin-top: 36px;
+  }
+
+  &__list-item {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 33px;
+    color: #fb3b2d;
+    & a {
+      text-decoration: none;
+      color: #fb3b2d;
+      :visited {
+        color: #fb3b2d;
+      }
+      :active {
+        color: #fb3b2d;
+      }
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .footer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 572px) {
+  .footer {
+    grid-template-columns: repeat(1, 1fr);
+    text-align: center;
+  }
+}
